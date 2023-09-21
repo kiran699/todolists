@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+::selection{
+  color: #ffff;
+  background: rgb(142, 73, 232);
+}
+body{
+  width: 100%;
+  height: 100vh;
+  /* overflow: hidden; */
+  padding: 10px;
+  background: linear-gradient(to bottom, #68EACC 0%, #497BE8 100%);
+}
+header{
+    text-align: center;
+    font-size: 4em;
+    color: aliceblue;
+}
+form{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#newItem{
+    width: 350px;
+    border: none;
+    outline: none;
+    height: 40px;
+    border-radius: 4px;
+    text-align: left;
+}
+#submit{
+    width: 100px;
+    display: inline-block;
+    border: none;
+    outline: none;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #497BE8;
+}
+#submit:hover{
+    background-color: #68EACC;
+}
+
+ol{
+    
+    width: 450px;
+    height: 500px;
+    background-color: #fff;
+    font-size: 22px;
+    font-family: monospace;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+}
+li{
+    position: relative;
+    left: 40px;
+}
+
+ol li .remove{
+    position: absolute;
+    top: 5px;
+    right: 50px;
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    border-radius: 50%;
+}
+ol li.done p{
+    text-decoration: line-through;
+    cursor: pointer;
+}
+ol li.done p::after{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 325px;
+    width: 25px;
+    height: 25px;
+    background-color: green;
+    border-radius: 50%;
+    cursor: pointer;
+}
